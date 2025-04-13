@@ -1,0 +1,23 @@
+{
+  "name": "api-validation",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Asit-14/api-validation#readme",
+  "bugs": {
+    "url": "https://github.com/Asit-14/api-validation/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asit-14/api-validation.git"
+  },
+  "license": "ISC",
+  "author": "asit kumar",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
