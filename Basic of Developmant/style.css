@@ -1,0 +1,28 @@
+/* decendent  selector */
+main p{
+	color: pink;
+	font-family: "Poppins", sans-serif;
+}
+
+/* child  selector  */
+h1 > p{
+	color: yellowgreen;
+}
+/* 
+/* sibling  selector  */
+/* section +p {
+	color: violet;
+} */ */
+
+/* general  sibling  selector  */
+/* section ~ p {
+	color: violet;
+} */
+
+
+/* attribute selector  */
+
+[target="_blank"]{
+	color: springgreen;
+	text-decoration: none;
+}
