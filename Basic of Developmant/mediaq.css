@@ -1,0 +1,95 @@
+/* body{
+	background-color: red;
+}
+div{
+	font-size: x-large;
+	text-align: center;
+}
+div::after{
+	content: "welcome to the demo"
+}
+
+@media (max-width:400px) {
+	body{
+		background-color: white;
+
+	}
+	div::after{
+		content: "very small";
+	}
+}
+@media (max-width:400px) and (max-width : 700px){
+	body{
+		background-color: pink;
+	}
+	div::after{
+
+		content: "medium";
+	}
+	
+} */
+
+@media(max-width : 600px){
+	body{
+		background-color: red;
+
+	}
+	div::after{
+		content: "this  is  For mobile phone";
+
+	}
+	div{
+		text-align: center;
+		font-size: x-large;
+	}
+}
+
+@media(min-width :600px){
+	body{
+		background-color: aquamarine;
+	}
+	div::after{
+		content: "this  for  tbalets  and  big phones";
+	}
+	div{
+		text-align: center;
+		font-size: x-large;
+	}
+}
+@media(min-width :768px){
+	body{
+		background-color: pink;
+	}
+	div::after{
+		content: "Tblets";
+	}
+	div{
+		text-align: center;
+		font-size: x-large;
+	}
+}
+
+@media(min-width :992px){
+	body{
+		background-color: blue;
+	}
+	div::after{
+		content: "Laptops";
+	}
+	div{
+		text-align: center;
+		font-size: x-large;
+	}
+}
+@media(min-width :1200px){
+	body{
+		background-color: darkcyan;
+	}
+	div::after{
+		content: "Big Schreen ";
+	}
+	div{
+		text-align: center;
+		font-size: x-large;
+	}
+}
