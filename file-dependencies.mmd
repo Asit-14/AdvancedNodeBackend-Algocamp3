@@ -1,0 +1,90 @@
+```mermaid
+graph LR
+    %% HTML Files and their CSS dependencies
+    subgraph "Basic Development Files"
+        HTML1[boxmodel.html] --> CSS1[Internal CSS]
+        HTML2[flexbox.html] --> CSS2[Internal CSS]
+        HTML3[form.html] --> CSS3[Basic Styling]
+        HTML4[animation.html] --> CSS4[animation.css]
+        HTML5[mediaq.html] --> CSS5[mediaq.css]
+        HTML6[position.html] --> CSS6[position.css]
+        HTML7[style.html] --> CSS7[style.css]
+    end
+    
+    subgraph "Portfolio Project"
+        HTML8[index.html] --> CSS8[style/style.css]
+        HTML8 --> IMG[assets/images]
+        HTML8 --> FONTS[Google Fonts]
+        HTML8 --> ICONS[Font Awesome]
+    end
+    
+    subgraph "JavaScript DOM Examples"
+        HTML9[dom.html] --> JS1[Dom.js]
+        HTML9 --> JS2[dom3.js]
+        HTML10[index.html] --> JS3[index.js]
+    end
+    
+    subgraph "Simple JS Project"
+        HTML11[index.html] --> JS4[script.js]
+        HTML11 --> CSS9[style.css]
+    end
+    
+    %% CSS Feature Dependencies
+    subgraph "CSS Features"
+        CSS4 --> ANIM[CSS Animations]
+        CSS5 --> MEDIA[Media Queries]
+        CSS6 --> POS[CSS Positioning]
+        CSS7 --> SEL[CSS Selectors]
+        CSS8 --> RESP[Responsive Design]
+        CSS8 --> FLEX[Flexbox Layout]
+        CSS8 --> GRID[CSS Grid]
+    end
+    
+    %% JavaScript Concept Dependencies
+    subgraph "JavaScript Concepts"
+        JS3 --> FUNC[Functions]
+        JS3 --> VAR[Variables]
+        JS3 --> LOOP[Loops]
+        JS1 --> DOM_MAN[DOM Manipulation]
+        JS2 --> EVENT[Event Handling]
+        JS4 --> PROJ[Project Logic]
+    end
+    
+    %% Learning Dependencies
+    FUNC --> FUNC_TYPES[Function Types]
+    FUNC_TYPES --> ANON[Anonymous Functions]
+    FUNC_TYPES --> EXPR[Function Expressions]
+    FUNC_TYPES --> SELF[Self-Invoking Functions]
+    FUNC_TYPES --> HOF[Higher-Order Functions]
+    
+    VAR --> ARRAY[Arrays]
+    ARRAY --> ARRAY_METHODS[Array Methods]
+    ARRAY --> SPREAD[Spread/Rest Operators]
+    
+    LOOP --> ARRAY_LOOPS[Array Loops]
+    
+    DOM_MAN --> OBJ[Objects]
+    OBJ --> OBJ_METHODS[Object Methods]
+    OBJ --> CLASSES[Classes]
+    OBJ --> PROTO[Prototypes]
+    OBJ --> GETSET[Getters/Setters]
+    
+    EVENT --> TRY[Try/Catch]
+    
+    PROJ --> REGEX[Regular Expressions]
+    
+    %% File Type Styling
+    classDef htmlFile fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    classDef cssFile fill:#f1f8e9,stroke:#388e3c,stroke-width:2px
+    classDef jsFile fill:#fff8e1,stroke:#f57c00,stroke-width:2px
+    classDef concept fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    classDef feature fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef external fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
+    
+    class HTML1,HTML2,HTML3,HTML4,HTML5,HTML6,HTML7,HTML8,HTML9,HTML10,HTML11 htmlFile
+    class CSS1,CSS2,CSS3,CSS4,CSS5,CSS6,CSS7,CSS8,CSS9 cssFile
+    class JS1,JS2,JS3,JS4 jsFile
+    class FUNC,VAR,LOOP,DOM_MAN,EVENT,PROJ,ANON,EXPR,SELF,HOF,ARRAY,ARRAY_METHODS,SPREAD,ARRAY_LOOPS,OBJ,OBJ_METHODS,CLASSES,PROTO,GETSET,TRY,REGEX concept
+    class ANIM,MEDIA,POS,SEL,RESP,FLEX,GRID feature
+    class FONTS,ICONS,IMG external
+```

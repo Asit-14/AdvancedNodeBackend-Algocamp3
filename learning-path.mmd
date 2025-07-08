@@ -1,0 +1,108 @@
+```mermaid
+flowchart TD
+    Start([Start Learning Journey]) --> HTML[HTML Fundamentals]
+    
+    %% HTML Learning Path
+    HTML --> HTML1[Basic Structure & Tags]
+    HTML --> HTML2[Forms & Input Elements]
+    HTML --> HTML3[Tables & Layout]
+    
+    HTML1 --> CSS[CSS Fundamentals]
+    HTML2 --> CSS
+    HTML3 --> CSS
+    
+    %% CSS Learning Path
+    CSS --> CSS1[Box Model & Positioning]
+    CSS --> CSS2[Flexbox Layout]
+    CSS --> CSS3[Selectors & Properties]
+    
+    CSS1 --> CSS_ADV[Advanced CSS]
+    CSS2 --> CSS_ADV
+    CSS3 --> CSS_ADV
+    
+    %% Advanced CSS
+    CSS_ADV --> CSS4[CSS Animations]
+    CSS_ADV --> CSS5[Media Queries & Responsive Design]
+    CSS_ADV --> CSS6[CSS Gradients & Effects]
+    
+    CSS4 --> PROJECT1[Portfolio Project]
+    CSS5 --> PROJECT1
+    CSS6 --> PROJECT1
+    
+    %% Portfolio Project
+    PROJECT1 --> PORTFOLIO[Personal Portfolio Website]
+    PORTFOLIO --> |"Skills Applied"| HTML_SKILLS[HTML Structure]
+    PORTFOLIO --> |"Skills Applied"| CSS_SKILLS[CSS Styling]
+    PORTFOLIO --> |"Skills Applied"| RESPONSIVE[Responsive Design]
+    
+    %% JavaScript Foundation
+    PROJECT1 --> JS[JavaScript Basics]
+    JS --> JS1[Variables & Data Types]
+    JS --> JS2[Functions & Scope]
+    JS --> JS3[Control Structures]
+    
+    JS1 --> JS_ADV[Advanced JavaScript]
+    JS2 --> JS_ADV
+    JS3 --> JS_ADV
+    
+    %% Advanced JavaScript
+    JS_ADV --> JS4[Functions Deep Dive]
+    JS_ADV --> JS5[Arrays & Methods]
+    JS_ADV --> JS6[Error Handling]
+    
+    JS4 --> JS_FUN[Function Types]
+    JS_FUN --> JS_FUN1[Anonymous Functions]
+    JS_FUN --> JS_FUN2[Function Expressions]
+    JS_FUN --> JS_FUN3[Self-Invoking Functions]
+    JS_FUN --> JS_FUN4[Higher-Order Functions]
+    
+    JS5 --> JS_ARRAY[Array Mastery]
+    JS_ARRAY --> JS_ARRAY1[Array Loops]
+    JS_ARRAY --> JS_ARRAY2[Array Methods]
+    JS_ARRAY --> JS_ARRAY3[Spread/Rest Operators]
+    
+    %% DOM Manipulation
+    JS_FUN --> DOM[DOM Manipulation]
+    JS_ARRAY --> DOM
+    JS6 --> DOM
+    
+    DOM --> DOM1[DOM Selection]
+    DOM --> DOM2[DOM Modification]
+    DOM --> DOM3[Event Handling]
+    
+    %% Object-Oriented JavaScript
+    DOM --> OOP[Object-Oriented JavaScript]
+    OOP --> OOP1[Objects & Properties]
+    OOP --> OOP2[Object Methods]
+    OOP --> OOP3[Classes & Constructors]
+    OOP --> OOP4[Prototypes & Inheritance]
+    OOP --> OOP5[Getters & Setters]
+    
+    %% Advanced Topics
+    OOP --> REGEX[Regular Expressions]
+    REGEX --> REGEX1[Pattern Matching]
+    REGEX --> REGEX2[Text Processing]
+    
+    %% Final Project
+    REGEX --> PROJECT2[Simple JavaScript Project]
+    PROJECT2 --> FINAL[Complete Web Application]
+    
+    %% Learning Outcomes
+    FINAL --> OUTCOMES[Learning Outcomes]
+    OUTCOMES --> OUT1[Full Stack Understanding]
+    OUTCOMES --> OUT2[Problem Solving Skills]
+    OUTCOMES --> OUT3[Project Development]
+    
+    %% Color coding for different skill levels
+    classDef beginner fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
+    classDef intermediate fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef advanced fill:#ffcdd2,stroke:#d32f2f,stroke-width:2px
+    classDef project fill:#e1bee7,stroke:#7b1fa2,stroke-width:3px
+    classDef outcome fill:#e8eaf6,stroke:#3f51b5,stroke-width:2px
+    
+    class HTML,HTML1,HTML2,HTML3,CSS,CSS1,CSS2,CSS3 beginner
+    class CSS_ADV,CSS4,CSS5,CSS6,JS,JS1,JS2,JS3,JS_ADV,JS4,JS5,JS6 intermediate
+    class JS_FUN,JS_FUN1,JS_FUN2,JS_FUN3,JS_FUN4,JS_ARRAY,JS_ARRAY1,JS_ARRAY2,JS_ARRAY3,DOM,DOM1,DOM2,DOM3,OOP,OOP1,OOP2,OOP3,OOP4,OOP5,REGEX,REGEX1,REGEX2 advanced
+    class PROJECT1,PORTFOLIO,PROJECT2,FINAL project
+    class OUTCOMES,OUT1,OUT2,OUT3 outcome
+```
