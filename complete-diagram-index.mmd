@@ -1,0 +1,64 @@
+```mermaid
+graph TB
+    subgraph "Repository Documentation"
+        DOC[MERMAID_DIAGRAMS.md]
+        DOC --> DESC[Documentation & Usage Guide]
+    end
+    
+    subgraph "Mermaid Diagram Files"
+        STRUCT[repository-structure.mmd]
+        LEARN[learning-path.mmd]
+        DEPS[file-dependencies.mmd]
+        OVERVIEW[repository-overview.mmd]
+        
+        STRUCT --> STRUCT_DESC[Complete file structure<br/>with categorization]
+        LEARN --> LEARN_DESC[Learning progression<br/>from beginner to advanced]
+        DEPS --> DEPS_DESC[File relationships<br/>and dependencies]
+        OVERVIEW --> OVERVIEW_DESC[High-level mind map<br/>overview]
+    end
+    
+    subgraph "Repository Content"
+        BASIC[Basic of Development]
+        JS[JavaScript]
+        REGEX[Regex]
+        PROJ[Simple JS Project]
+        
+        BASIC --> HTML[HTML Files]
+        BASIC --> CSS[CSS Files]
+        BASIC --> PORT[Portfolio Project]
+        
+        JS --> CORE[Core JavaScript]
+        JS --> DOM[DOM Manipulation]
+        JS --> OOP[Object-Oriented Programming]
+        
+        HTML --> HTML_FILES[boxmodel.html<br/>flexbox.html<br/>form.html<br/>animation.html<br/>mediaq.html<br/>position.html<br/>style.html<br/>and more...]
+        
+        CSS --> CSS_FILES[animation.css<br/>mediaq.css<br/>position.css<br/>style.css]
+        
+        CORE --> JS_FILES[function.js<br/>arraymethod.js<br/>object.js<br/>classintro.js<br/>and more...]
+        
+        DOM --> DOM_FILES[dom.html<br/>Dom.js<br/>dom3.js]
+        
+        REGEX --> REGEX_FILE[regex.js]
+        PROJ --> PROJ_FILES[index.html<br/>script.js<br/>style.css]
+    end
+    
+    %% Relationships
+    STRUCT_DESC -.-> BASIC
+    LEARN_DESC -.-> BASIC
+    DEPS_DESC -.-> HTML
+    OVERVIEW_DESC -.-> BASIC
+    
+    %% Color coding
+    classDef docFile fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    classDef mmdFile fill:#f1f8e9,stroke:#388e3c,stroke-width:2px
+    classDef contentDir fill:#fff8e1,stroke:#f57c00,stroke-width:2px
+    classDef fileGroup fill:#fce4ec,stroke:#c2185b,stroke-width:1px
+    classDef description fill:#f3e5f5,stroke:#7b1fa2,stroke-width:1px
+    
+    class DOC,DESC docFile
+    class STRUCT,LEARN,DEPS,OVERVIEW mmdFile
+    class BASIC,JS,REGEX,PROJ contentDir
+    class HTML,CSS,PORT,CORE,DOM,OOP,HTML_FILES,CSS_FILES,JS_FILES,DOM_FILES,REGEX_FILE,PROJ_FILES fileGroup
+    class STRUCT_DESC,LEARN_DESC,DEPS_DESC,OVERVIEW_DESC description
+```
