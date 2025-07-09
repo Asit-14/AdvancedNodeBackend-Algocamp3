@@ -55,3 +55,5 @@ String.prototype.truelength = function () {
 
 "Hello World!  ".truelength(); // The true length of the string is 12 characters.
 "   Asit Shakya      ".truelength(); // The true length of the string is 14 characters.
+
+
